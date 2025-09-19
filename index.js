@@ -94,13 +94,7 @@ const jsQuiz = [
 
 let currentQuestionIndex = 0;
 let score = 0;
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  nextQuestion();
-});
-
-
+nextQuestion()
 function nextQuestion() {
   if (currentQuestionIndex < jsQuiz.length) {
     let questionElement = document.getElementById("quisten");
@@ -143,12 +137,7 @@ function checkAnswer(event) {
       }
     }
   }
-
-  
-  setTimeout(() => {
     currentQuestionIndex++;
-    nextQuestion();
-  }, 1000); 
 }
 
 
