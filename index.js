@@ -148,7 +148,7 @@ function showResultPopup() {
   popupContent.innerHTML = `
     <h2>Quiz Complete!</h2>
     <p>Your final score is: ${score} out of ${jsQuiz.length * 10}</p>
-    <button onclick="restartQuiz()">Restart Quiz</button>
+    <button onclick="restartQuiz()" class="restart-btn id="btn-restart">Restart Quiz</button>
   `;
 
   popupContainer.style.display = "flex";
@@ -167,3 +167,4 @@ function closePopup() {
   const popupContainer = document.getElementById("popup-container");
   popupContainer.style.display = "none";
 }
+
